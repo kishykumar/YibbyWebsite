@@ -122,6 +122,14 @@ hr {
   margin-top:10px;
 }
 
+#yb_checkbox_rider {
+  margin-top: 0.46428571em;
+}
+
+#yb_checkbox_driver {
+  margin-top: 0.46428571em;
+}
+
 .input-field textarea.form-control {
     height: 160px;
     box-shadow: none;
