@@ -952,10 +952,32 @@ mr = (function (mr, $, window, document){
             if (typeof originalError !== typeof undefined && originalError !== false) {
                 formError.html(originalError);
             }
-            
+
             // validateFields returns 1 on error;
             if (mr.forms.validateFields(thisForm) !== 1) {
                
+                var isRiderChecked = thisForm.find('input[name="group[7699][4]"]:checked').length > 0;
+                var isDriverChecked = thisForm.find('input[name="group[7699][8]"]:checked').length > 0;
+                
+                $.ajax({
+                    url: "//api.yibbyapp.com/email/signup", 
+                    method: "POST",
+                    crossDomain: true,
+                    data: {
+                        name: thisForm.find('input[name="FNAME"]').val(),
+                        email: thisForm.find('input[name="EMAIL"]').val(),
+                        invitecode: thisForm.find('input[name="INVITECODE"]').val(),
+                        rider: isRiderChecked,
+                        driver: isDriverChecked
+                    },
+                    success: function() {
+                      console.log("Success in sending email to info at yibbyapp")
+                    },
+                    error: function(xhr, status, error) {
+                      console.log("Error in sending email: " + error)
+                    }
+                });
+
                 thisForm.removeClass('attempted-submit');
 
                 // Hide the error if one was shown
