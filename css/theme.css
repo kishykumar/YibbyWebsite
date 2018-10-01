@@ -165,7 +165,7 @@ ol {
   line-height: 1.85714286em;
 }
 ul.bullets {
-  list-style: inside;
+  list-style: outside;
 }
 ol {
   list-style-type: upper-roman;

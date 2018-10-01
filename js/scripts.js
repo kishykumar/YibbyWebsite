@@ -949,6 +949,7 @@ mr = (function (mr, $, window, document){
         if (formAction.indexOf('createsend.com') !== -1 || formAction.indexOf('list-manage.com') !== -1 ) {
 
             console.log('Mail list form signup detected.');
+
             if (typeof originalError !== typeof undefined && originalError !== false) {
                 formError.html(originalError);
             }
@@ -956,9 +957,9 @@ mr = (function (mr, $, window, document){
             // validateFields returns 1 on error;
             if (mr.forms.validateFields(thisForm) !== 1) {
                
-                var isRiderChecked = thisForm.find('input[name="group[7699][4]"]:checked').length > 0;
-                var isDriverChecked = thisForm.find('input[name="group[7699][8]"]:checked').length > 0;
-                
+                var isRiderChecked = $('#mce-MMERGE5-0').prop('checked');
+                var isDriverChecked = $('#mce-MMERGE5-1').prop('checked');
+
                 $.ajax({
                     url: "//api.yibbyapp.com/email/signup", 
                     method: "POST",
@@ -977,6 +978,16 @@ mr = (function (mr, $, window, document){
                       console.log("Error in sending email: " + error)
                     }
                 });
+
+                if (isRiderChecked) {
+                    console.log("Rider checked");
+                    window.open('https://testflight.apple.com/join/zz1alt2T', '_blank');
+                } else if (isDriverChecked) {
+                    console.log("Driver checked");
+                    window.open('https://testflight.apple.com/join/iWW9c0tD', '_blank');
+                } else {
+                    console.log("Error in rider/driver radio button check");
+                }
 
                 thisForm.removeClass('attempted-submit');
 
@@ -1036,8 +1047,6 @@ mr = (function (mr, $, window, document){
                     submitButton.removeClass('btn--loading');
                 }
             
-
-                
             } else {
                 // There was a validation error - show the default form error message
                 mr.forms.showFormError(formSuccess, formError, 1000, 5000, 500);
@@ -1118,8 +1127,15 @@ mr = (function (mr, $, window, document){
 
             form = $(form);
 
-
-
+        form.find('.validate-required[type="radio"]').each(function() {
+            var radio = $(this);
+            if (!$('[name="' + $(this).attr('name') + '"]:checked').length) {
+                error = 1;
+                name = $(this).attr('data-name') ||  'check';
+                radio.parent().addClass('field-error');
+                //body.find('.form-error').text('Please tick at least one ' + name + ' box.');
+            }
+        });
 
         form.find('.validate-required[type="checkbox"]').each(function() {
             var checkbox = $(this);

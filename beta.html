@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Yibby - Rideshare Your Way</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site Description Here">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body class=" ">
+        <a id="start"></a>
+        
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=1829101123983194&autoLogAppEvents=1';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="nav-container ">    
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+                            <a href="index.html">
+                                <img class="logo logo-dark" alt="logo" src="img/yibby_logo.png" />
+                            </a>
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+
+            <!--end bar-->
+            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="index.html">
+                                    <img class="logo logo-dark" alt="logo" src="img/yibby_logo.png" />
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        
+                        <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+                                <div class="bar__module">
+                                    <ul class="menu-horizontal text-left">
+                                        <li>
+                                            <a href="beta.html">
+                                                Beta
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="page-about-company.html">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="page-careers.html">
+                                                Careers
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#contact" class="scroll">
+                                                Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+
+        <div class="main-container">
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <article>
+                                <div class="article__title text-center">
+                                    <h1 class="h2">We are in beta stage!</h1>
+                                    <br>
+                                    <span>A NEW RIDE EXPERIENCE AWAITS YOU</span>
+                                    <h4>October 1, 2018 12:00 PM</h4>
+                                </div>
+                                <!--end article title-->
+                                <div class="article__body">
+
+                                    <img alt="Image" src="img/yibby-promo-card-1.jpeg" />
+                                    
+                                    <p>
+                                        Yibby is a rideshare app to help drivers and riders find the optimum price with bidding. It directly connects drivers with riders to negotiate a price for an empowering experience in less than 30 seconds!
+                                    </p>
+                                    
+                                    <h4>How does it work?</h4>
+                                    <p>
+                                        The rider selects a pickup and dropoff location, and picks a dollar amount that they want to pay for the ride. The app shows you a suggested price and the driver pickup ETA. 
+                                        <br>Once a ride is requested, the bid goes to 3 nearest drivers. The first driver to accept your bid, wins! This entire process takes less than 30 seconds. 
+                                    </p>
+                                    
+                                    <blockquote>
+                                        &ldquo; Riders and drivers deserve complete transparency and freedom to make informed decisions in ridesharing &mdash; and with Yibby they get just that &rdquo;
+                                    </blockquote>
+
+                                    <h4>What do our riders get from it?</h4>
+                                    <ul class="bullets">
+                                        <li>Consistent, upfront, and fixed fares</li>
+                                        <li>No surge</li>
+                                        <li>Ride in less than 30 seconds</li>
+                                    </ul>
+                                    
+                                    <h4>What do our drivers get from it?</h4>
+                                    <ul class="bullets">
+                                        <li>Upfront earnings and ride details (pickup, dropoff, pickup ETA).</li>
+                                        <li>OK to reject bids if you don’t like the amount, pickup, dropoff, or traffic.</li>
+                                        <li>100% money from the ride goes to our drivers during Beta. </li>
+                                        <li>We value our drivers - <a href='#promo_life'>10% for life</a> :-)</li>
+                                    </ul>
+
+                                    <h4>Supported platforms</h4>
+                                    <p>Currently, the app is only available for iPhone/iOS. The Android app is in the works and we'll let you know when it'll be available.</p>
+
+                                    
+                                    <h4>Pickup restriction</h4>
+                                    <p>The pickup location will be restricted to <b>San Francisco's Market St. Area</b> during Beta; the drop off can be anywhere. This means our drivers will be proximity of the area shown in the map below.</p>
+
+                                    <iframe src="https://www.google.com/maps/d/embed?mid=1DQTpdCX9R04FOb8Da91eUHfECt-PFXx4&z=13" width="640" height="480"></iframe>
+
+                                    <br>
+                                    <h1>Payments and Promotions</h1>
+                                    
+                                    <h4>Rider Credit Card Authorization</h4>
+                                    <p>Once you bid, you’ll see a $5 authorization charge on your credit card. In any case, this authorization charge should disappear from your statement within 24 to 48 hours.</p>
+
+                                    <h4>Driver payouts</h4>
+                                    <ul class="bullets">
+                                        <li>Drivers are paid weekly - every Wednesday at 4:00 AM with their last week earnings using ACH transfers to their bank account. </li>
+                                        <li>Sunday is the first day of the week. A week’s earning will include rides serviced from Sunday 12:00 AM to Saturday 11:59 PM. </li>
+                                    </ul>
+
+                                    <h4>Cancellation Policy</h4>
+                                    <ul class="bullets">
+                                        <li>A rider can cancel the ride at no charge within 2 minutes after the bid is accepted.</li>
+                                        <li>A $5 fee may be charged if the rider cancels after the 2 minute grace period.</li>
+                                        <li>Once the driver arrives at the pickup location, the ride cannot be cancelled.</li>
+                                        <li>The driver can cancel any time before arriving at the pickup location. </li>
+                                    </ul>
+
+                                    <h4>Referral bonus (for riders and drivers)</h4>
+                                    <ul class="bullets">
+                                        <li>$5 referral bonus for every referred rider or driver after they complete at least 1 ride.</li>
+                                        <li>This money will be paid to you via Venmo in 2-3 business days. We’ll follow up with you to get your Venmo id.</li>
+                                    </ul>
+
+                                    <h4>$5 off first 5 rides (for riders)</h4>
+                                    <ul class="bullets">
+                                        <li>Sign up during our Beta to instantly receive this offer.</li>
+                                        <li>As you complete your rides, the money will be paid to you via Venmo in 2-3 business days. We’ll follow up with you to get your Venmo id.</li>
+                                    </ul>
+
+                                    <h4>100% during Beta (for drivers)</h4>
+                                    <p>For the duration of our Beta Program, our drivers who sign-up and test our app will get 100% of the fare (except the credit card swipe fee 2-3%). We will not take anything from you. This will change to the <a href='#promo_life'>10% for life</a> promotion once we launch as mentioned below.</p>
+
+                                    <h4 id="promo_life">10% for life (for drivers)</h4>                                    
+                                    <p>Drivers who sign up for our beta program will get 10% cut for life. This means we will only take 10% cut from our drivers once we officially launch.</p>
+                                </div>
+
+                                <div class="article__share text-center row">
+                                    <div class="fb-share-button col-md-6 col-sm-12 mb-4" data-href="https://www.yibbyapp.com" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+                                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.yibbyapp.com%2F&amp;src=sdkpreparse" class="btn bg--facebook btn--icon fb-xfbml-parse-ignore">
+                                            <span class="btn__text">
+                                                <i class="socicon socicon-facebook"></i>
+                                                Share on Facebook
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="fb-share-button col-md-6 col-sm-12" data-href="https://www.yibbyapp.com" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+
+                                        <a class="btn bg--twitter btn--icon" href="https://twitter.com/intent/tweet?screen_name=yibbyapp&ref_src=twsrc%5Etfw" data-show-count="false">
+                                            <span class="btn__text">
+                                                <i class="socicon socicon-twitter"></i>
+                                                Share on Twitter
+                                            </span>
+                                        </a>
+                                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--end item-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="text-center space--sm">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <div class="boxed boxed--lg bg--dark subscribe-form-1">
+                                <h3>Download app &#38; Subscribe up now to start riding</h3>
+                                <h4>Join over 100 excited riders and drivers in the rideshare revolution!</h4>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-8 text-left">
+
+                                        <form action="https://yibbyapp.us14.list-manage.com/subscribe/post?u=79b8dad219d284539c6f75ec3&amp;id=e975806d45" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form--active" target="_blank" data-success="Thanks for signing up.  Please check your inbox for a confirmation email." data-error="Please provide your details." novalidate="true">
+                                    
+                                            <div class="mc-field-group">
+                                                <input id="mce-FNAME" value="" class="validate-required signup_field" type="text" name="FNAME" placeholder="Your Name">
+                                            </div>
+
+                                            <div class="mc-field-group">
+                                                <input id="mce-EMAIL" class="form-control signup_field validate-required validate-email" type="email" name="EMAIL" placeholder="Email Address">
+                                            </div>
+
+                                            <div class="mc-field-group">
+                                                <input id="mce-INVITECODE" class="signup_field" type="text" name="INVITECODE" placeholder="Invite Code (Optional)">
+                                            </div>
+                                            
+                                            <div class="container">
+                                                <div class="row align-items-center" style="margin-top: 0em;">
+
+                                                    <div id="yb_checkbox_rider" class="input-radio col-6">
+                                                        <input type="radio" value="I'm a Rider" name="MMERGE5" id="mce-MMERGE5-0" class="validate-required">
+                                                        <label for="mce-MMERGE5-0"></label>
+                                                        <span>I'm a Rider</span>
+                                                    </div>
+
+                                                    <div id="yb_checkbox_driver" class="input-radio col-6">
+                                                        <input type="radio" value="I'm a Driver" name="MMERGE5" id="mce-MMERGE5-1" class="validate-required">
+                                                        <label for="mce-MMERGE5-1"></label>
+                                                        <span>I'm a Driver</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button id="mc-embedded-subscribe" type="submit" class="btn btn--primary type--uppercase">Submit</button>
+                                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                                <input type="text" name="b_77142ece814d3cff52058a51f_f300c9cce8" tabindex="-1" value="">
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                                <!--end of row-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="space--sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+            <footer class="text-center-xs space--xs ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="page-about-company.html">
+                                        <span class="h6 type--uppercase">About</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="page-careers.html">
+                                        <span class="h6 type--uppercase">Careers</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#contact" class="scroll">
+                                        <span class="h6 type--uppercase">Support</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5 text-right text-center-xs">
+                            <ul class="social-list list-inline list--hover">
+                                <li>
+                                    <a href="//twitter.com/yibbyapp">
+                                        <i class="socicon socicon-twitter icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="//www.facebook.com/Yibbyapp/">
+                                        <i class="socicon socicon-facebook icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="//www.linkedin.com/company/yibby">
+                                        <i class="socicon socicon-linkedin icon icon--xs"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-md-7">
+                            <span class="type--fine-print">&copy;
+                            <span class="update-year"></span> Yibby Inc.</span>
+                            <a class="type--fine-print" href="privacy-policy.html">Terms of Service</a>
+
+                            <!-- <a class="type--fine-print" href="#">Legal</a> -->
+                        </div>
+                        <div class="col-md-5 text-right text-center-xs">
+                            <a class="type--fine-print" href="mailto:support@yibbyapp.com?Subject=Hi%20there">support@yibbyapp.com</a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </footer>
+        </div>
+
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='SUBTYPE';ftypes[3]='text';fnames[4]='INVITECODE';ftypes[4]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+        <!-- Javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+
+        <!--<div class="loader"></div>-->
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
