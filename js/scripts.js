@@ -981,10 +981,10 @@ mr = (function (mr, $, window, document){
 
                 if (isRiderChecked) {
                     console.log("Rider checked");
-                    window.open('https://testflight.apple.com/join/zz1alt2T', '_blank');
+                    //window.open('https://testflight.apple.com/join/zz1alt2T', '_blank');
                 } else if (isDriverChecked) {
                     console.log("Driver checked");
-                    window.open('https://testflight.apple.com/join/iWW9c0tD', '_blank');
+                    //window.open('https://testflight.apple.com/join/iWW9c0tD', '_blank');
                 } else {
                     console.log("Error in rider/driver radio button check");
                 }
