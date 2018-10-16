@@ -957,37 +957,35 @@ mr = (function (mr, $, window, document){
             // validateFields returns 1 on error;
             if (mr.forms.validateFields(thisForm) !== 1) {
                
-                var isRiderChecked = $('#mce-MMERGE5-0').prop('checked');
-                var isDriverChecked = $('#mce-MMERGE5-1').prop('checked');
-
-                $.ajax({
-                    url: "//api.yibbyapp.com/email/signup", 
-                    method: "POST",
-                    crossDomain: true,
-                    data: {
-                        name: thisForm.find('input[name="FNAME"]').val(),
-                        email: thisForm.find('input[name="EMAIL"]').val(),
-                        invitecode: thisForm.find('input[name="INVITECODE"]').val(),
-                        rider: isRiderChecked,
-                        driver: isDriverChecked
-                    },
-                    success: function() {
-                      console.log("Success in sending email to info at yibbyapp")
-                    },
-                    error: function(xhr, status, error) {
-                      console.log("Error in sending email: " + error)
-                    }
-                });
-
-                if (isRiderChecked) {
-                    console.log("Rider checked");
-                    //window.open('https://testflight.apple.com/join/zz1alt2T', '_blank');
-                } else if (isDriverChecked) {
-                    console.log("Driver checked");
-                    //window.open('https://testflight.apple.com/join/iWW9c0tD', '_blank');
-                } else {
-                    console.log("Error in rider/driver radio button check");
-                }
+                // var isRiderChecked = $('#mce-MMERGE5-0').prop('checked');
+                // var isDriverChecked = $('#mce-MMERGE5-1').prop('checked');
+                // $.ajax({
+                //     url: "//api.yibbyapp.com/email/signup", 
+                //     method: "POST",
+                //     crossDomain: true,
+                //     data: {
+                //         name: thisForm.find('input[name="FNAME"]').val(),
+                //         email: thisForm.find('input[name="EMAIL"]').val(),
+                //         invitecode: thisForm.find('input[name="INVITECODE"]').val(),
+                //         rider: isRiderChecked,
+                //         driver: isDriverChecked
+                //     },
+                //     success: function() {
+                //       console.log("Success in sending email to info at yibbyapp")
+                //     },
+                //     error: function(xhr, status, error) {
+                //       console.log("Error in sending email: " + error)
+                //     }
+                // });
+                // if (isRiderChecked) {
+                //     console.log("Rider checked");
+                //     //window.open('https://testflight.apple.com/join/zz1alt2T', '_blank');
+                // } else if (isDriverChecked) {
+                //     console.log("Driver checked");
+                //     //window.open('https://testflight.apple.com/join/iWW9c0tD', '_blank');
+                // } else {
+                //     console.log("Error in rider/driver radio button check");
+                // }
 
                 thisForm.removeClass('attempted-submit');
 
