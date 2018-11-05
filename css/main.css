@@ -2,6 +2,26 @@
   background-color:#F9F9F9;
 }
 
+i.yb-download-btn {
+  font-size: 30px;
+  color: #fff;
+}
+
+.btn__text.yb-download-btn-txt {
+  font-size: 1em;
+  color: #fff;
+}
+
+.btn-download-rider {
+  background: #29AA9D;
+  border-color: #29AA9D;
+}
+
+.btn-download-driver {
+  background: #24B567;
+  border-color: #24B567;
+}
+
 .promo1 {
   padding-bottom: 0;
 }
